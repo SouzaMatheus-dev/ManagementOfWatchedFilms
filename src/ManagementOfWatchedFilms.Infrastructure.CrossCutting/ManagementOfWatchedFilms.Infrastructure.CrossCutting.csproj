@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ManagementOfWatchedFilms.Domain\ManagementOfWatchedFilms.Domain.csproj" />
+    <ProjectReference Include="..\ManagementOfWatchedFilms.Infrastructure.CrossCutting.IMDb\ManagementOfWatchedFilms.Infrastructure.CrossCutting.IMDb.csproj" />
+    <ProjectReference Include="..\ManagementOfWatchedFilms.Infrastructure.Data\ManagementOfWatchedFilms.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\ManagementOfWatchedFilms.Service\ManagementOfWatchedFilms.Service.csproj" />
+  </ItemGroup>
+
+</Project>
